@@ -64,12 +64,16 @@
         // n1.quantidade = 10;
         // n1.valor = 200.50;
         var n1 = new Negociacao(new Date(), 5, 700);       
-        n1._quantidade = 1000000000;  
-        
-        console.log(n1.quantidade);
         console.log(n1.data);
-        console.log(n1.valor); 
-        console.log(n1.volume);     
+        
+        n1.data.setDate(20);
+
+        console.log(n1.data);
     </script>
 </body>
 </html>
+
+<!--
+    Object.freeze() - É shallow, ou seja, ele ficará na superfície. Quando congelamos um valor,
+    não podemos alterá-lo. Porém, como _data é um objeto, não entrará como uma das propriedades do objeto.
+-->
