@@ -63,11 +63,14 @@
         // var n1 = new Negociacao();
         // n1.quantidade = 10;
         // n1.valor = 200.50;
-        var n1 = new Negociacao(new Date(), 5, 700);       
+        var hoje = new Date();
+        
+        var n1 = new Negociacao(hoje, 5, 700);
+        
         console.log(n1.data);
         
-        n1.data.setDate(20);
-
+        hoje.setDate(20);
+        
         console.log(n1.data);
     </script>
 </body>
