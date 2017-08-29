@@ -22,3 +22,5 @@ Por convenção, adotamos que os atributos privados devem usar o prefixo _ (unde
 * Para evitarmos escrever repetidas vezes document.querySelector, nós usamos o "truque" de colocá-lo na variável $. Mas vimos que neste processo, o querySelector perdia o contexto do document, e o this deixava de apontar para este. Para resolver o assunto, usamos a chamada para o método bind() e o $ - equivalente ao querySelector - fizesse uma referência para o document. Fizemos um sintaxe parecida com jQuery.
 
 * Falamos também que não era suficiente capturarmos a data do formulário e passá-la como parâmetro para o construtor de Date,porque o input vinha no formato ano, mês e dia. Depois, tivemos que fazer algumas transformações e vimos que o Date aceita trabalhar com alguns parâmetros. Passaremos um array para o Date, também passamos uma string com ano, mês e dia, cada item separado por uma vírgula. Existem várias formas de trabalharmos com a data, mas precisamos ajustar a data que lemos no formulário e está num formato string, para o formato compatível para o construtor do Date
+
+# Aula 04 Lidar com data é trabalhoso ? Chame um ajudante!
