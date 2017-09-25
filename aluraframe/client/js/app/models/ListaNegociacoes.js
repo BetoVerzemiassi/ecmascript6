@@ -9,6 +9,6 @@ class ListaNegociacoes {
     }
 
     get negociacoes(){
-        return [].concat(this._negociacoes);
+        return [].concat(this._negociacoes);//criamos um array em branco, mantendo os dados originais das negociações
     }
 }
