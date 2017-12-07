@@ -1,33 +1,30 @@
-/**
- Para criarmos a classe com o ES6, usaremos a sintaxe class Negociacao. 
- Ela terá o mesmo nome do arquivo, propositalmente, para que haja uma paridade 
- e maior organização - mas não era obrigatório. E como definiremos os atributos 
- de uma classe no ES6? Utilizando a função constructor().
- */
-
 class Negociacao {
-
-    constructor(data, quantidade, valor){
-
+    
+    constructor(data, quantidade, valor) {
+        
         this._data = new Date(data.getTime());
         this._quantidade = quantidade;
         this._valor = valor;
-        Object.freeze(this);//congela a negociação, não conseguimos alterar seu valor
+        Object.freeze(this);
     }
-
-    get volume(){
+    
+    get volume() {
+        
         return this._quantidade * this._valor;
     }
-
-    get data(){
-        new Date(this._data.getTime());//O getTime de uma data retornará um número long com uma representação da data.
+    
+    get data() {
+        
+        return new Date(this._data.getTime());
     }
-
-    get quantidade(){
+    
+    get quantidade() {
+        
         return this._quantidade;
     }
-
-    get valor(){
+    
+    get valor() {
+        
         return this._valor;
     }
 }
